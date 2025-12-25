@@ -15,7 +15,7 @@ git clone https://github.com/Padrosum/POGKS
 2. cd POGKS
   
 3. Script'e çalıştırma izni verin:
-   chmod +x ./install-ghost.sh
+   chmod +x ./*.sh
 
 4. Çalıştırın:
    ./*.sh
