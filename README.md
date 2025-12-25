@@ -24,15 +24,11 @@ git clone https://github.com/Padrosum/POGKS
    ya da
 
    bash *.sh
-
-El ile örnek:
-```bash
-podman volume create ghost-content
-podman run -d --name ghost \
-  -p 2368:2368 \
-  -v ghost-content:/var/lib/ghost/content \
-  -e url="http://blog.example.com" \
-  docker.io/library/ghost:latest
+```
+git clone https://github.com/Padrosum/POGKS
+cd POGKS
+chmod +x ./*.sh
+bash *.sh
 ```
 
 ## Yönetim
