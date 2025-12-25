@@ -9,15 +9,17 @@ Basit ve hızlı: Bu repo, Podman kullanarak Ghost blog'unu container içinde ç
 - Yeterli disk alanı
 
 ## kurulum
-1. Repoyu indirme
+1. Repoyu indirme:
+2. 
 git clone https://github.com/Padrosum/POGKS
 
-2. cd POGKS
+3. cd POGKS
   
-3. Script'e çalıştırma izni verin:
+4. Script'e çalıştırma izni verin:
+5. 
    chmod +x ./*.sh
 
-4. Çalıştırın:
+6. Çalıştırın:
    ./*.sh
 
    ya da
