@@ -34,27 +34,11 @@ podman run -d --name ghost \
   docker.io/library/ghost:latest
 ```
 
-## Önemli yapılandırma (örnek env)
-- SITE_URL: Blog adresi (ör. https://blog.example.com)  
-- GHOST_PORT: 2368 (varsayılan)  
-- GHOST_CONTENT: içerik dizini veya volume  
-- DB_TYPE: sqlite veya mysql (gerekiyorsa DB bilgilerini verin)
-
-Script, bu değişkenleri ortam değişkeni veya dosyadan alacak şekilde düzenlenmiş olabilir.
-
 ## Yönetim
-- Log: podman logs -f ghost  
-- Durdur: podman stop ghost  
-- Başlat: podman start ghost  
-- Sil: podman rm -f ghost
-
-## Yedekleme & Güncelleme
-- İçerik yedeği:
-  podman cp ghost:/var/lib/ghost/content ./backup/content-YYYYMMDD
-- Güncelleme:
-  podman pull docker.io/library/ghost:latest
-  podman rm -f ghost
-  (aynı run komutunu yeniden çalıştırın)
+- Log: podman logs <site-adı>  
+- Durdur: podman stop <site-adı>  
+- Başlat: podman start <site-adı>  
+- Sil: podman rm -f <site-adı>
 
 ## Kaldırma
 - Container: podman rm -f <site-adı>
